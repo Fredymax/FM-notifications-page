@@ -1,4 +1,5 @@
 import { Component } from "./libs/index.js";
+import NotificationJson from "../data/notifications.js";
 const $containerNotifications = document.querySelector("#notifications");
 const $countNotifications = document.querySelector("#count-notifications");
 const $markAllAsRead = document.querySelector("#mark-all-as-read");
@@ -6,9 +7,10 @@ const $markAllAsRead = document.querySelector("#mark-all-as-read");
 let LIST_NOTIFICATIONS = [];
 
 async function getNotifications() {
-  const response = await fetch("https://fredymax.github.io/FM-notifications-page/assets/data/notifications.json");
-  const { data } = await response.json();
-  return data;
+  // const response = await fetch("https://fredymax.github.io/FM-notifications-page/assets/data/notifications.json");
+  // const { data } = NotificationJson;
+  // return data;
+  return NotificationJson;
 }
 
 function renderNotifications() {
