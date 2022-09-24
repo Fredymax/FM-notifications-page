@@ -6,7 +6,7 @@ const $markAllAsRead = document.querySelector("#mark-all-as-read");
 let LIST_NOTIFICATIONS = [];
 
 async function getNotifications() {
-  const response = await fetch("../assets/data/notifications.json");
+  const response = await fetch("https://fredymax.github.io/FM-notifications-page/assets/data/notifications.json");
   const { data } = await response.json();
   return data;
 }
