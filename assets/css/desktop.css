@@ -1,0 +1,55 @@
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .wrapper {
+    inline-size: 100%;
+    max-inline-size: 730px;
+    margin: auto;
+    padding-inline: 30px;
+  }
+
+  .header__title {
+    font-size: 24px;
+  }
+
+  body {
+    background-color: var(--very-light-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-start: 3.75rem;
+    min-block-size: calc(100vh - 3.75rem);
+  }
+
+  header,
+  main {
+    max-inline-size: 730px;
+    inline-size: 100%;
+  }
+
+  header {
+    border-radius: 15px 15px 0 0;
+  }
+
+  main {
+    border-radius: 0 0 15px 15px;
+  }
+
+  .main {
+    margin: 0;
+    padding-block-end: 30px;
+  }
+
+  .notification__content:hover {
+    background-color: var(--light-blue1);
+  }
+
+  .notification {
+    cursor: default;
+  }
+
+  .notification.notification-unread {
+    cursor: pointer;
+  }
+}

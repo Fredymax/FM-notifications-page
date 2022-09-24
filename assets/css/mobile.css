@@ -1,0 +1,151 @@
+@media (min-width: 300px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    background-color: var(--white);
+    font-size: 1rem;
+    inline-size: 100%;
+    min-block-size: 100vh;
+    block-size: 100%;
+  }
+
+  .wrapper {
+    padding-inline: 15px;
+  }
+
+  header {
+    background-color: var(--white);
+  }
+
+  .header {
+    padding-block: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+  }
+
+  .header__title {
+    font-size: 19px;
+  }
+
+  .header__badge {
+    inline-size: 32px;
+    block-size: 25px;
+    background-color: var(--primary-blue);
+    border-radius: 0.3em;
+    color: var(--white);
+    text-align: center;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__subtitle {
+    color: var(--blue);
+    font-size: 1rem;
+  }
+
+  .header__link {
+    text-decoration: none;
+    color: var(--blue);
+  }
+
+  /* NOTIFICATIONS */
+  .main {
+    margin-block: 15px;
+    background-color: var(--white);
+  }
+
+  .notifications {
+    inline-size: 100%;
+    block-size: auto;
+  }
+
+  .notification {
+    display: flex;
+    gap: 0.625rem;
+    padding: 0.9375rem;
+  }
+
+  .user__avatar {
+    inline-size: 40px;
+    block-size: 40px;
+  }
+
+  .user__avatar-thumbnail {
+    inline-size: 100%;
+    object-fit: contain;
+  }
+
+  .notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6875rem;
+    gap: 11px;
+  }
+
+  .notification__description {
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    inline-size: 100%;
+  }
+
+  .notification__username {
+    color: var(--very-dark-blue);
+  }
+
+  .notification__activity {
+    font-weight: 800;
+  }
+
+  .notification.notification-unread {
+    background-color: var(--very-light-blue);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px var(--very-light-blue);
+  }
+
+  .notification__activity-group {
+    font-weight: 800;
+    color: var(--primary-blue);
+  }
+
+  .notification.notification-unread > .notification__description .notification__sentence::after {
+    content: "";
+    display: inline-block;
+    inline-size: 8px;
+    block-size: 8px;
+    background-color: var(--primary-red);
+    border-radius: 50%;
+    margin-inline-start: 0.2em;
+  }
+
+  .notification__published-time {
+    color: var(--blue);
+  }
+
+  .notification__content {
+    border: 1px solid var(--light-blue2);
+    border-radius: 0.2em;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 300ms;
+  }
+
+  .notification__picture {
+    max-inline-size: auto;
+  }
+
+  .natification__picture-thumbnail {
+    inline-size: 40px;
+  }
+
+  .natification__picture-thumbnail > img {
+    inline-size: 100%;
+  }
+}
